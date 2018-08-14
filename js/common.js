@@ -92,13 +92,8 @@ var swiper = new Swiper('.main-slider', {
 	},
 	
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.main-pagination',
 		dynamicBullets: true,
-	},
-	
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
 	},
 
 });
