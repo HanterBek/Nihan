@@ -195,6 +195,11 @@
 	.second-container {
 		height: 150px;
 	}
+	.grid figure {
+		max-height: 450px;
+		min-height: 450px;
+		height: 450px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -232,3 +237,13 @@
 	font-size: 16px;
 }
 }
+
+@media only screen and (min-width : 1800px) {
+	.grid figure {
+		max-height: 650px;
+		min-height: 450px;
+		height: 650px;
+	}
+}
+
+

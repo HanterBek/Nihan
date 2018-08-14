@@ -32,7 +32,7 @@ body {
 	line-height: 1.6;
 	font-family: "RobotoRegular", sans-serif;
 	overflow-x: hidden;
-	min-height: 1500px;
+	min-height: 3000px;
 }
 
 header {
@@ -328,17 +328,44 @@ header {
 
 
 
+
+.third-container {
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+
+}
+
 /* Common style */
+
+.grid {
+	width: 100%;
+}
 .grid figure {
 	position: relative;
-	float: left;
 	overflow: hidden;
 	margin: 10px 0;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
-	width: 25%;
-	background: #3085a3;
+	min-width: 100%;
+	max-width: 240px;
+	min-height: 420px;
+	max-height: 420px;
+	height: 420px;
 	text-align: center;
 	cursor: pointer;
 }
@@ -349,6 +376,7 @@ header {
 	min-height: 100%;
 	max-width: 100%;
 	opacity: 0.8;
+	background: cover;
 }
 
 .grid figure figcaption {
@@ -383,19 +411,33 @@ header {
 	font-size: 0;
 	opacity: 0;
 }
+.grid figure {
+	text-align: center;
+}
+
 
 .grid figure h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
+	text-align: center;
 }
 
 .grid figure h2 span {
 	font-weight: 800;
 }
+.grid figure h3 {
+	font-size: 1.7rem;
+	margin: 0 auto;
+	word-spacing: -0.15em;
+	font-weight: 300;
+	padding: 30% 0 10px 0;
+	text-align: center;
+}
 
 .grid figure h2,
 .grid figure p {
-	margin: 0;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .grid figure p {
@@ -410,6 +452,7 @@ figure.effect-roxy {
 	background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
 	background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
 }
+
 
 figure.effect-roxy img {
 	max-width: none;
@@ -441,6 +484,21 @@ figure.effect-roxy figcaption {
 	text-align: left;
 }
 
+figure.effect-roxy:hover {
+	background: #333;
+}
+
+figure.effect-roxy img {
+	max-width: none;
+	height: 100%;
+	width: -webkit-calc(100% + 60px);
+	width: calc(100% + 60px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-50px,0,0);
+	transform: translate3d(-50px,0,0);
+}
+
 figure.effect-roxy h2 {
 	padding: 30% 0 10px 0;
 }
@@ -455,7 +513,6 @@ figure.effect-roxy p {
 }
 
 figure.effect-roxy:hover img {
-	opacity: 0.7;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
@@ -466,25 +523,6 @@ figure.effect-roxy:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,6 +1,11 @@
+
+
+
 $(document).ready(function() {
 	$('.responsive-nav').slideAndSwipe();
 });
+
+
 
 
 $(function() {
@@ -78,6 +83,7 @@ $( () => {
 			$('#menu-toggle').removeClass('closeMenu');
 		});
 	});
+
 	
 });
 
@@ -122,13 +128,33 @@ var swiper = new Swiper('.second-container', {
 
 
 
-
-
-
-
-
-
-
+ var swiper = new Swiper('.third-container', {
+      slidesPerView: 4,
+      autoplay: {
+		delay: 1500,
+		disableOnInteraction: false,
+	},
+      breakpoints: {
+      	1380: {
+          slidesPerView: 3,
+        },
+      	1250: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        500: {
+          slidesPerView: 1,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      }
+    });
 
 
 
