@@ -1,3 +1,7 @@
+::selection {
+	background: #555;
+	color: #fff;
+}
 *::-webkit-input-placeholder {
 	color: #666;
 	opacity: 1;
@@ -40,6 +44,36 @@ header {
 	display: -ms-flexbox;
 	display: flex;
 }
+
+/* Uparrow button */
+
+#toTop {
+width:66px;
+height: 66px;
+padding-top: .8rem;
+background: #00000036;
+text-align:center;
+border-radius: 5px;
+position:fixed;
+bottom:15px; /* отступ кнопки от нижнего края страницы*/
+right:15px;
+cursor:pointer;
+display:none;
+color:#fff;
+font-size:11px;
+z-index: 3;
+}
+#toTop:hover {
+	background: #00000073;
+}
+#toTop:active {
+	background: #000000ad;
+}
+
+.fa-chevron-up:before {
+	font-size: 2rem;
+}
+/* End uparrowbutton */
 
 /*** Navigation Styles ***/
 .main-nav {
@@ -410,11 +444,14 @@ header {
 }
 
 
-.grid figure h2 {
+.grid figure.effect-roxy h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
 	text-align: center;
 	font-size: 1.5rem;
+}
+.grid figure.effect-steve h2 {
+	font-size: 1rem;
 }
 
 .grid figure h2 span {
@@ -563,7 +600,7 @@ figure.effect-steve p {
 }
 
 .steve-p {
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .d-grid {
@@ -583,8 +620,11 @@ figure.effect-steve p {
 	background-position: center;
 	background-size: cover;
 	width: 300px;
-	height: 300px;
+	height: 100%;
+	max-height: 190px;
+	min-height: 190px;
 }
+
 
 .section04 h1{
 	text-align: center;
@@ -594,12 +634,16 @@ figure.effect-steve p {
 	margin: 0 auto;
 }
 
-.section04 h1:after {
+.section01 h1:after,
+.section02 h1:after,
+.section03 h1:after,
+.section04 h1:after,
+.section05 h1:after {
 	content: '';
 	display: block;
 	margin: 0 auto;
 	height: 7px;
-	width: 50px;
+	width: 80px;
 	border-bottom: 7px solid #333;
 	padding-top: 15px;
 }
@@ -607,14 +651,31 @@ figure.effect-steve p {
 .section04 {
 	padding: 3rem 0;
 	position: relative;
+	top: 100px;
+	background: url(../img/bg.jpg) no-repeat fixed;
+	background-size: 100%;
+}
+
+.section04 img {
+	max-width: 100%;
 }
 
 .section05 {
-	padding: 3rem 0;
+	padding: 3rem 0 3rem 0;
 	position: relative;
 }
 
+.section05 h1 {
+	padding-bottom: 3rem;
+}
 
+.section05 iframe{
+	margin-bottom: 1.5rem;
+}
+
+.main-video {
+	height: 165px;
+}
 
 
 
@@ -625,13 +686,88 @@ figure.effect-steve p {
 }
 
 
-
-
-footer {
-	min-height: 300px;
-	background: #999;
+.bg {
+	background: #c5c5c5;
 }
 
+.bg11 {
+	background: #c5c5c5!important;
+	border-top: 2px solid #989898;
+}
+
+.fab {
+	font-size: 30px;
+	padding-right: 20px;
+	transition: all .3s ease-out;
+}
+
+.i1 a, .i2 a, .i3 a, .i4 a {
+	color: #666;
+}
+
+.i1 a:hover {
+	color: #D72727;
+}
+
+.i2 a:hover {
+	color: #5b88bd;
+}
+
+.i3 a:hover {
+	color: #003a86;
+}
+
+.i4 a:hover {
+	color: #ac3655;
+}
+
+.text {
+	color: #fff;
+	font-size: 14px;
+	transition: all .5s ease-out;
+}
+
+.text1 {
+	color: #666;
+	font-size: 14px;
+	transition: all .3s ease-out;
+	font-weight: bold;
+}
+
+
+
+
+.footer-link {
+	color: #666;
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px;
+	font-size: 13px;
+}
+
+
+
+
+
+
+.footer-p {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.usoft {
+	max-width: 6rem;
+}
+.footer-logo {
+	max-width: 10rem;
+}
+
+
+footer a:hover {
+	text-decoration: none;
+}
 
 
 

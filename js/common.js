@@ -84,8 +84,11 @@ $( () => {
 		});
 	});
 
+
 	
 });
+
+
 
 var swiper = new Swiper('.main-slider', {
 	spaceBetween: 30,
@@ -128,49 +131,69 @@ var swiper = new Swiper('.second-container', {
 
 
 
- var swiper = new Swiper('.third-container', {
- 	loop: true,
-      slidesPerView: 4,
-      autoplay: {
+var swiper = new Swiper('.third-container', {
+	loop: true,
+	slidesPerView: 4,
+	autoplay: {
 		delay: 1500,
 		disableOnInteraction: false,
 	},
-      breakpoints: {
-      	1380: {
-          slidesPerView: 3,
-        },
-      	1250: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        800: {
-          slidesPerView: 2,
-        },
-        500: {
-          slidesPerView: 1,
-        },
-      }
-    });
+	breakpoints: {
+		1380: {
+			slidesPerView: 3,
+		},
+		1250: {
+			slidesPerView: 2,
+		},
+		1024: {
+			slidesPerView: 3,
+		},
+		800: {
+			slidesPerView: 2,
+		},
+		500: {
+			slidesPerView: 1,
+		},
+	}
+});
 
 
 
- var swiper = new Swiper('.fourth-container', {
-      effect: 'coverflow',
-      loop: true,
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-    });
+var swiper = new Swiper('.fourth-container', {
+	effect: 'coverflow',
+	loop: true,
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	coverflowEffect: {
+		rotate: 50,
+		stretch: 0,
+		depth: 100,
+		modifier: 1,
+		slideShadows : true,
+	},
+});
 
+/* uparrow */
+	$(window).scroll(function() {
+
+		if($(this).scrollTop() > 350) {
+
+			$('#toTop').fadeIn();
+
+		} else {
+
+			$('#toTop').fadeOut();
+
+		}
+
+	});
+
+	$('#toTop').click(function() {
+
+		$('body,html').animate({scrollTop:0},1500);
+
+	});
 
 
 
