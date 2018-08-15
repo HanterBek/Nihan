@@ -22,8 +22,6 @@ body input:required:valid,
 body textarea:required:valid {
 	
 }
-
-
 body {
 	font-family: sans-serif;
 	font-size: 16px;
@@ -224,10 +222,6 @@ header {
 	margin: 0 auto;
 }
 
-.desktop-dropdown {
-	margin-left: 1rem;
-}
-
 
 .dropdown-toggle:after {
 	position: absolute;
@@ -322,7 +316,7 @@ header {
 
 .section02 {
 	position: relative;
-	top: 100px;
+	top: 140px;
 }
 
 
@@ -360,7 +354,7 @@ header {
 .grid figure {
 	position: relative;
 	overflow: hidden;
-	margin: 10px 0;
+	margin: 10px 0 0 0;
 	min-width: 100%;
 	max-width: 240px;
 	min-height: 420px;
@@ -420,13 +414,14 @@ header {
 	word-spacing: -0.15em;
 	font-weight: 300;
 	text-align: center;
+	font-size: 1.5rem;
 }
 
 .grid figure h2 span {
 	font-weight: 800;
 }
 .grid figure h3 {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	margin: 0 auto;
 	word-spacing: -0.15em;
 	font-weight: 300;
@@ -448,37 +443,6 @@ header {
 /***** Roxy *****/
 /*---------------*/
 
-figure.effect-roxy {
-	background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-	background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
-}
-
-
-figure.effect-roxy img {
-	max-width: none;
-	width: -webkit-calc(100% + 60px);
-	width: calc(100% + 60px);
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-50px,0,0);
-	transform: translate3d(-50px,0,0);
-}
-
-figure.effect-roxy figcaption::before {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	border: 1px solid #fff;
-	content: '';
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-20px,0,0);
-	transform: translate3d(-20px,0,0);
-}
-
 figure.effect-roxy figcaption {
 	padding: 3em;
 	text-align: left;
@@ -493,10 +457,6 @@ figure.effect-roxy img {
 	height: 100%;
 	width: -webkit-calc(100% + 60px);
 	width: calc(100% + 60px);
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-50px,0,0);
-	transform: translate3d(-50px,0,0);
 }
 
 figure.effect-roxy h2 {
@@ -505,28 +465,154 @@ figure.effect-roxy h2 {
 
 
 figure.effect-roxy p {
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
-}
-
-figure.effect-roxy:hover img {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect-roxy:hover figcaption::before,
-figure.effect-roxy:hover p {
 	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+}
+
+
+
+/*-----------------*/
+/***** Steve *****/
+/*-----------------*/
+
+figure.effect-steve {
+	z-index: auto;
+	overflow: visible;
+	background: #000;
+	transition: box-shadow 0.35s;
+}
+
+
+
+figure.effect-steve figcaption {
+	z-index: 1;
+}
+
+figure.effect-steve img {
+	opacity: 1;
+}
+
+figure.effect-steve h2,
+figure.effect-steve p {
+	background: #fff;
+	color: #2d434e;
+}
+
+figure.effect-steve h2 {
+	position: relative;
+	margin-top: 2em;
+	padding: 0.25em;
+}
+
+figure.effect-steve h2:before {
+	box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+figure.effect-steve p {
+	margin-top: 1em;
+	padding: 0.5em;
+	font-weight: 800;
 }
 
 
 
 
+
+
+.card-img-top {
+	max-height: 367px;
+	min-height: 367px;
+}
+
+
+.tilt {
+	width: 90%;
+	height: 300px;
+	background: #fff000;
+	border-radius: 5px;
+	padding-top: 50px;
+}
+
+
+.inner {
+	width: 75px;
+	height: 75px;
+	background: #fff;
+	margin: 50px auto;
+	box-shadow: 0 0 20px #655;
+}
+
+.tilt-h1 {
+	-webkit-transform: translateZ(80px);
+	transform: translateZ(80px);
+}
+
+.section02 {
+	background: #f8f8f8;
+}
+
+.section03 {
+	padding: 7rem 0;
+	position: relative;
+	top: 100px;
+	background: #f8f8f8;
+}
+
+
+.section03 h1 {
+	text-align: center;
+}
+
+.steve-p {
+	padding-bottom: 2rem;
+}
+
+.d-grid {
+	display: grid;
+}
+
+.w-100 {
+	max-width: 100%;
+}
+
+.fourth-container {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.fourth-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.section04 h1{
+	text-align: center;
+	padding-bottom: 2rem;
+	position: relative;
+	width: 15rem;
+	margin: 0 auto;
+}
+
+.section04 h1:after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	height: 7px;
+	width: 50px;
+	border-bottom: 7px solid #333;
+	padding-top: 15px;
+}
+
+.section04 {
+	padding: 3rem 0;
+	position: relative;
+}
+
+.section05 {
+	padding: 3rem 0;
+	position: relative;
+}
 
 
 
@@ -541,6 +627,10 @@ figure.effect-roxy:hover p {
 
 
 
+footer {
+	min-height: 300px;
+	background: #999;
+}
 
 
 

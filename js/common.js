@@ -45,7 +45,7 @@ $(function() {
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-	
+
 });
 
 
@@ -129,6 +129,7 @@ var swiper = new Swiper('.second-container', {
 
 
  var swiper = new Swiper('.third-container', {
+ 	loop: true,
       slidesPerView: 4,
       autoplay: {
 		delay: 1500,
@@ -142,21 +143,33 @@ var swiper = new Swiper('.second-container', {
           slidesPerView: 2,
         },
         1024: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
-        768: {
+        800: {
           slidesPerView: 2,
         },
         500: {
           slidesPerView: 1,
         },
-        320: {
-          slidesPerView: 1,
-        }
       }
     });
 
 
+
+ var swiper = new Swiper('.fourth-container', {
+      effect: 'coverflow',
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+    });
 
 
 
