@@ -35,7 +35,6 @@ body {
 	line-height: 1.6;
 	font-family: "RobotoRegular", sans-serif;
 	overflow-x: hidden;
-	min-height: 1500px;
 }
 
 header {
@@ -49,20 +48,20 @@ header {
 /* Uparrow button */
 
 #toTop {
-width:66px;
-height: 66px;
-padding-top: .8rem;
-background: #00000036;
-text-align:center;
-border-radius: 5px;
-position:fixed;
-bottom:15px; /* отступ кнопки от нижнего края страницы*/
-right:15px;
-cursor:pointer;
-display:none;
-color:#fff;
-font-size:11px;
-z-index: 3;
+	width:66px;
+	height: 66px;
+	padding-top: .8rem;
+	background: #00000036;
+	text-align:center;
+	border-radius: 5px;
+	position:fixed;
+	bottom:15px; /* отступ кнопки от нижнего края страницы*/
+	right:15px;
+	cursor:pointer;
+	display:none;
+	color:#fff;
+	font-size:11px;
+	z-index: 3;
 }
 #toTop:hover {
 	background: #00000073;
@@ -722,6 +721,7 @@ figure.effect-steve p {
 .section06 {
 	position: relative;
 	background: url(../img/bgsection.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 15rem 0;
 }
@@ -754,10 +754,76 @@ figure.effect-steve p {
 .top-bg {
 	text-transform: uppercase;
 	background: url(../img/bgsection.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 5rem 0;
 }
 
+.sidebar {
+	width: 100%;
+	background: #fff;
+	border: 2px solid #ddd;
+	margin-top: 2rem;
+}
+.sidebar ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.sidebar ul li:nth-child(1) {
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 1rem 0;
+}
+
+.sidebar ul li a {
+	text-decoration: none;
+	color: #333;
+	text-transform: uppercase;
+	padding: 1rem;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	border-bottom: 2px solid #ddd;
+}
+
+.sidebar ul li a span {
+	position: relative;
+	padding-bottom: 1rem;
+}
+
+.sidebar ul li a span,
+.sidebar ul li a span:after {
+	transition: all .5s;
+}
+
+.sidebar ul li a span:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '';
+	color: transparent;
+	background: #333;
+	height: 2px;
+}
+
+.sidebar ul li a:hover span:after {
+	width: 100%;
+}
+
+
+
+
+.sidebar ul li a img {
+	width: 100px;
+	height: 70px;
+	padding-right: 1rem;
+}
 
 
 .space-between {
