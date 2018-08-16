@@ -63,12 +63,7 @@ header {
 	font-size:11px;
 	z-index: 3;
 }
-#toTop:hover {
-	background: #00000073;
-}
-#toTop:active {
-	background: #000000ad;
-}
+
 
 .fa-chevron-up:before {
 	font-size: 2rem;
@@ -156,9 +151,7 @@ header {
 	border-radius: 50%;
 	cursor: pointer;
 }
-#menu-toggle:hover .bar {
-	width: 25px;
-}
+
 #menu-toggle.closeMenu .bar {
 	width: 25px;
 }
@@ -496,9 +489,7 @@ figure.effect-roxy figcaption {
 	text-align: left;
 }
 
-figure.effect-roxy:hover {
-	background: #333;
-}
+
 
 figure.effect-roxy img {
 	max-width: none;
@@ -559,6 +550,10 @@ figure.effect-steve p {
 	margin-top: 1em;
 	padding: 0.5em;
 	font-weight: 800;
+}
+
+.dropdown-item img {
+	max-width: 2.2rem;
 }
 
 
@@ -794,29 +789,25 @@ figure.effect-steve p {
 	padding-bottom: 1rem;
 }
 
-.sidebar ul li a span,
-.sidebar ul li a span:after {
-	transition: all .5s;
-}
 
-.sidebar ul li a span:after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 0%;
-	content: '';
-	color: transparent;
-	background: #333;
-	height: 2px;
-}
 
-.sidebar ul li a:hover span:after {
-	width: 100%;
+.j-column {
+	padding: 30px 0;
 }
 
 
+.box-shadow div {
+	overflow: hidden;
+}
+.box-shadow a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.box-shadow h2 {
+	text-transform: uppercase;
+}
 
 
 .sidebar ul li a img {
@@ -826,10 +817,36 @@ figure.effect-steve p {
 }
 
 
+.box-shadow {
+	background: #FFFFFF;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.18);;
+	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.18);;
+}
+
+.menu-section {
+	padding: 30px 0;
+}
+.menu-section h1 {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.menu-punkts {
+	margin: 5rem 0;
+}
+
+.menu-punkt {
+	margin-top: 2rem;
+}
+
 .space-between {
 	justify-content: space-between;
 }
 
+.regions-section {
+	padding-bottom: 3rem;
+}
 
 .bg {
 	background: #c5c5c5;
@@ -850,21 +867,7 @@ figure.effect-steve p {
 	color: #666;
 }
 
-.i1 a:hover {
-	color: #D72727;
-}
 
-.i2 a:hover {
-	color: #5b88bd;
-}
-
-.i3 a:hover {
-	color: #003a86;
-}
-
-.i4 a:hover {
-	color: #ac3655;
-}
 
 .text {
 	color: #fff;
@@ -910,9 +913,6 @@ figure.effect-steve p {
 }
 
 
-footer a:hover {
-	text-decoration: none;
-}
 
 
 

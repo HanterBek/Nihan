@@ -104,7 +104,9 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+	.j-column {
+		flex-direction: column;
+	}
 }
 
 
@@ -271,10 +273,85 @@
 		transform: translateY(5px);
 		/* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 	}
+	.j-column {
+		flex-direction: inherit;
+	}
+	.sidebar ul li a span,
+	.sidebar ul li a span:after {
+		transition: all .5s;
+	}
+
+	.sidebar ul li a span:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 0%;
+		content: '';
+		color: transparent;
+		background: #333;
+		height: 2px;
+	}
+
+	.sidebar ul li a:hover span:after {
+		width: 100%;
+	}
+	.box-shadow img {
+		transition: all .5s;
+	}
+	.box-shadow img:hover {
+		transform: scale(1.2);
+	}
+	.i1 a:hover {
+		color: #D72727;
+	}
+
+	.i2 a:hover {
+		color: #5b88bd;
+	}
+
+	.i3 a:hover {
+		color: #003a86;
+	}
+
+	.i4 a:hover {
+		color: #ac3655;
+	}
+	footer a:hover {
+		text-decoration: none;
+	}
+	#toTop:hover {
+		background: #00000073;
+	}
+	#toTop:active {
+		background: #000000ad;
+	}
+	figure.effect-roxy:hover {
+		background: #333;
+	}
+	.box-shadow h2 {
+		font-size: 22px;
+	}
+	.box-shadow p {
+		font-size: 12px;
+	}
+	.p-4 {
+		padding: 1rem;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.box-shadow h2 {
+		font-size: 34px;
+	}
+	.box-shadow p {
+		font-size: 16px;
+	}
+	.p-4 {
+		padding: 1.5rem;
+	}
 	.main-nav {
 		height: 160px;
 	}
@@ -459,6 +536,7 @@
 	.main-video {
 		height: 330px!important;
 	}
+
 }
 
 /* Large Devices, Wide Screens */
