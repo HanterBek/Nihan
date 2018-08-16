@@ -556,7 +556,13 @@ figure.effect-steve p {
 	max-width: 2.2rem;
 }
 
-
+.main-slide h1 {
+	position: absolute;
+	z-index: 999;
+	color: #fff;
+	font-size: 56px;
+	font-weight: bold;
+}
 
 
 
