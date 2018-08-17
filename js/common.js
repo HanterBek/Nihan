@@ -1,6 +1,5 @@
 
 
-
 $(document).ready(function() {
 	$('.responsive-nav').slideAndSwipe();
 });
@@ -175,61 +174,24 @@ var swiper = new Swiper('.fourth-container', {
 });
 
 /* uparrow */
-	$(window).scroll(function() {
+$(window).scroll(function() {
 
-		if($(this).scrollTop() > 350) {
+	if($(this).scrollTop() > 350) {
 
-			$('#toTop').fadeIn();
+		$('#toTop').fadeIn();
 
-		} else {
+	} else {
 
-			$('#toTop').fadeOut();
+		$('#toTop').fadeOut();
 
-		}
+	}
 
-	});
+});
 
-	$('#toTop').click(function() {
+$('#toTop').click(function() {
 
-		$('body,html').animate({scrollTop:0},1500);
+	$('body,html').animate({scrollTop:0},1500);
 
-	});
+});
 
-	//typed.js
-	$('document').ready(function(){
-		var typed = new Typed ('#typed',{
-			strings: ["Khiva is a city in the Khorezm region of Uzbekistan.","Historical inner city of Khiva - the pearl of the Khorezm oasis."],
-			startDelay: 4000 ,
-			typeSpeed: 80,
-			backSpeed: 40,
-			loop: true,
-		});
-	});
-$('document').ready(function(){
-		var typed = new Typed ('#myTyped',{
-			strings: ["Welcome to UZBEKISTAN!"],
-			startDelay: 0 ,
-			typeSpeed: 100,
-			backSpeed: 60,
-		});
-	});
-$('document').ready(function(){
-		var typed = new Typed ('#typed1',{
-			strings: ["Bukhara is an ancient Uzbek city through which the Great Silk Road.","Средневековье город был крупным центром исламской теологии и культуры."],
-			startDelay: 4000 ,
-			typeSpeed: 80,
-			backSpeed: 40,
-			loop: true,
-		});
-	});
-$('document').ready(function(){
-		var typed = new Typed ('#myTyped1',{
-			strings: ["Welcome to UZBEKISTAN!"],
-			startDelay: 0 ,
-			typeSpeed: 100,
-			backSpeed: 60,
-		});
-	});
-
-
-
+new WOW().init();
