@@ -830,6 +830,12 @@ figure.effect-steve p {
 	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.18);;
 }
 
+.box-shadow p:nth-child(3) {
+	font-size: 14px;
+
+}
+
+
 .menu-section {
 	padding: 30px 0;
 }
