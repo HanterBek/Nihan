@@ -195,3 +195,57 @@ $('#toTop').click(function() {
 });
 
 new WOW().init();
+
+	//typed.js
+$('document').ready(function(){
+	var typed = new Typed ('#typed',{
+		strings: ["Khiva is a city in the Khorezm region of Uzbekistan.","Historical inner city of Khiva - the pearl of the Khorezm oasis."],
+		startDelay: 4000 ,
+		typeSpeed: 80,
+		backSpeed: 40,
+		loop: true,
+	});
+});
+$('document').ready(function(){
+		var typed = new Typed ('#myTyped',{
+			strings: ["Welcome to UZBEKISTAN!"],
+			startDelay: 0 ,
+			typeSpeed: 100,
+			backSpeed: 60,
+		});
+	});
+$('document').ready(function(){
+		var typed = new Typed ('#typed1',{
+			strings: ["Bukhara is an ancient Uzbek city through which the Great Silk Road.","The Middle Ages city was a major center of Islamic theology and culture."],
+			startDelay: 4000 ,
+			typeSpeed: 80,
+			backSpeed: 40,
+			loop: true,
+		});
+	});
+$('document').ready(function(){
+	var typed = new Typed ('#myTyped1',{
+		strings: ["Welcome to UZBEKISTAN!"],
+		startDelay: 0 ,
+		typeSpeed: 100,
+		backSpeed: 60,
+	});
+});
+
+$('document').ready(function(){
+		var typed = new Typed ('#typed2',{
+			strings: ["Registan is an area in the center of Samarkand.","'Registan' was called the main square in the cities of the Middle East."],
+			startDelay: 4000 ,
+			typeSpeed: 80,
+			backSpeed: 40,
+			loop: true,
+		});
+	});
+$('document').ready(function(){
+	var typed = new Typed ('#myTyped2',{
+		strings: ["Welcome to UZBEKISTAN!"],
+		startDelay: 0 ,
+		typeSpeed: 100,
+		backSpeed: 60,
+	});
+});
