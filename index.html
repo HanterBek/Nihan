@@ -14,7 +14,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/swiper-slider/dist/css/swiper.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	
@@ -22,6 +21,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/animate/animate.min.css">
 
 	<script src="libs/modernizr/modernizr.js"></script>
 
@@ -38,7 +38,7 @@
 
 
 
-			<div class="main-nav">
+			<div class="main-nav animated bounceInDown">
 
 				<div class="container">
 
@@ -52,17 +52,17 @@
 
 							</div><!-- logo -->
 							<ul class="main-ul">
-								<li><a href="#">HOME</a></li>
+								<li><a href="#"></a></li>
 								<li><a href="regions.html">REGIONS</a></li>
 								<li><a href="hotels.html">HOTELS</a></li>
 								<li><a href="#">CONTACTS</a></li>
 								<span class="dropdown">
 									<a class="dropdown-toggle dropdown-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<img src="img/eng.png" alt="eng" class="img-width">
+										<img src="img/eng.png" alt="eng" class="img-width" height="20px" width="40px">
 									</a>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item" href="#"><img src="img/rus.png" alt="rus" class="img-width"></a>
-										<a class="dropdown-item" href="#"><img src="img/uzb.png" alt="uzb" class="img-width"></a>
+										<a class="dropdown-item" href="#"><img src="img/rus.png" alt="rus" class="img-width"> Русский</a>
+										<a class="dropdown-item" href="#"><img src="img/uzb.png" alt="uzb" class="img-width"> Uzbek</a>
 									</div>
 								</span><!-- dropdown -->
 							</ul><!-- main-ul -->
@@ -112,11 +112,13 @@
 
 									<span class="dropdown">
 										<a class="dropdown-toggle dropdown-link desktop-dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<img src="img/eng.png" alt="eng" class="img-width">
+											<img src="img/eng.png" alt="eng" class="img-width" width="40px" height="20px">
 										</a>
 										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-											<a class="dropdown-item" href="#"><img src="img/rus.png" alt="rus" class="img-width"></a>
-											<a class="dropdown-item" href="#"><img src="img/uzb.png" alt="uzb" class="img-width"></a>
+											<a class="dropdown-item animated fadeInRight" href="#"><img src="img/rus.png" alt="rus" class="img-width"> Русский
+											</a>
+											<a class="dropdown-item animated fadeInLeft" href="#"><img src="img/uzb.png" alt="uzb" class="img-width"> Uzbek
+											</a>
 										</div>
 									</span><!-- dropdown -->
 								</ul><!-- desktop-ul -->
@@ -139,9 +141,27 @@
 			<div class="swiper-container main-slider">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide main-slide"><img src="img/slider-img/slider-1.jpg" alt="">
-						<h1 class="animated fadeInLeftBig">WELCOME TO UZBEKISTAN</h1>
+						<div class="carousel-caption float-left">
+							<div class="container">
+								<h2 class="pl-3 animated swing">
+									<span id="myTyped"></span>
+									<br>
+									<span id="typed"></span>
+								</h2>
+							</div>
+						</div>
 					</div>
-					<div class="swiper-slide main-slide"><img src="img/slider-img/slider-2.jpg" alt=""></div>
+					<div class="swiper-slide main-slide"><img src="img/slider-img/slider-2.jpg" alt="">
+						<div class="carousel-caption float-left">
+							<div class="container">
+								<h2 class="pl-3 animated swing">
+									<span id="myTyped1"></span>
+									<br>
+									<span id="typed1"></span>
+								</h2>
+							</div>
+						</div>
+					</div>
 					<div class="swiper-slide main-slide"><img src="img/slider-img/slider-1.jpg" alt=""></div>
 				</div>
 				<!-- Add Pagination -->
@@ -159,16 +179,16 @@
 
 			<div class="container">
 
-				<h1>ABOUT UZBEKISTAN</h1>
+				<h1 class=" animated fadeInUp">ABOUT UZBEKISTAN</h1>
 
 				<div class="row">
 
-					<div class="col-md-7 text-left">
-						<p>Узбекистан –  государство, расположенное в центральной части Средней Азии., которая некогда входила в состав СССР. Она славится своими мечетями, мавзолеями и сооружениями, возведенными на Великом шелковом пути – древней торговой дороге между Китаем и Средиземноморьем. Город Самарканд, который являлся важным пунктом на этом пути, получил всемирную известность благодаря площади Регистан, которую окружают три украшенные мозаиками медресе (мусульманские учебные заведения), возведенные в XV и XVII веках. Узбекистан занимает 56-е место по территории и 41-е место по населению, по запасам золота республика занимает 4-е место в мире, а по уровню его добычи 7-е</p>
+					<div class="col-md-7 text-left animated fadeInLeft">
+						<p>Uzbekistan is a state located in the central part of Central Asia., Which was once part of the USSR. It is famous for its mosques, mausoleums and structures erected on the Great Silk Road - the ancient trade road between China and the Mediterranean. The city of Samarkand, which was an important point along the way, gained worldwide recognition due to the Registan Square, which is surrounded by three mosaics decorated with medrese (Muslim educational institutions), erected in the XV and XVII centuries. Uzbekistan occupies the 56th place in the territory and the 41st place in terms of population, in terms of gold reserves the republic ranks 4th in the world, and in terms of its production, the 7th</p>
 					</div>
 					<div class="col-md-5">
 						<!-- Swiper -->
-						<div class="second-container swiper-container">
+						<div class="second-container swiper-container animated fadeInRight">
 							<div class="swiper-wrapper">
 								<div class="second-slide swiper-slide" >
 									<img src="img/about/first.jpg" alt="" class="img-width">
@@ -364,11 +384,11 @@
 
 		<div class="container">
 
-			<h1>OTHER</h1>
+			<h1 class="animated fadeInUp">OTHER</h1>
 
 			<div class="d-grid">
 				
-				<div class="col-md-4 w-100">
+				<div class="col-md-4 w-100 animated fadeInLeft">
 					<div class="grid steve-p">
 						<figure class="effect-steve">
 							<img src="img/restaurant.jpg">
@@ -380,7 +400,7 @@
 						</figure>
 					</div>
 				</div>
-				<div class="col-md-4 w-100 ">
+				<div class="col-md-4 w-100 animated fadeInUp">
 					<div class="grid steve-p responsive-margin">
 						<figure class="effect-steve">
 							<img src="img/hotel.jpg">
@@ -393,7 +413,7 @@
 					</div>
 				</div><!-- end -->
 
-				<div class="col-md-4 w-100">
+				<div class="col-md-4 w-100 animated fadeInRight">
 					<div class="grid steve-p">
 						<figure class="effect-steve">
 							<img src="img/entertainment.jpg">
@@ -418,10 +438,10 @@
 
 		<div class="container">
 
-			<h1>INSTAGRAM</h1>
+			<h1 class="animated fadeInUp">INSTAGRAM</h1>
 
 			<!-- Swiper -->
-			<div class="swiper-container fourth-container">
+			<div class="swiper-container fourth-container animated fadeInUp">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide fourth-slide">
 						<img src="img/insta/1.jpg" alt="">
@@ -453,21 +473,21 @@
 	<section class="section05">
 		
 		<div class="container">
-			<h1 class="text-center">YouTube</h1>
+			<h1 class="text-center animated fadeInUp">YouTube</h1>
 			<div class="row">
 				
-				<div class="col-md-6">
+				<div class="col-md-6 animated fadeInLeft">
 					<iframe class="main-video" width="100%" height="337" src="https://www.youtube.com/embed/q5VCdvQHsqQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-3 animated fadeInUp">
 					<iframe width="100%" height="165" src="https://www.youtube.com/embed/7TByjfwhieg?rel=0"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					<div class="col-md-12 p-0">
 						<iframe width="100%" height="165" src="https://www.youtube.com/embed/RzwXV59cb5E"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-3 animated fadeInRight">
 					<iframe width="100%" height="165" src="https://www.youtube.com/embed/YQe60UX_Z2o?rel=0"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					<div class="col-md-12 p-0">
 						<iframe width="100%" height="165" src="https://www.youtube.com/embed/q5VCdvQHsqQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -488,10 +508,10 @@
 		
 		<div class="container">	
 
-			<h1 class="text-center">FaceBook</h1>
+			<h1 class="text-center animated fadeInUp">FaceBook</h1>
 
 			<!-- Swiper -->
-			<div class="swiper-container fourth-container">
+			<div class="swiper-container fourth-container animated fadeInUp">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide fourth-slide">
 						<img src="img/insta/1.jpg" alt="">
@@ -529,23 +549,23 @@
 			<div class="container">
 				<div class="col-md-12 mx-auto text-center">
 					<p class="pt-3 pb-2 m-0">
-						<span class="i1">
+						<span class="i1 animated rotateInUpLeft">
 							<a href="https://www.youtube.com/" target="about">
 								<i class="fab fa-youtube"></i>
 							</a>
 						</span>
-						<span class="i2">
+						<span class="i2 animated rotateInUpLeft">
 							<a href="https://vk.com/feed" target="about">
 								<i class="fab fa-vk"></i>
 							</a>
 
 						</span>
-						<span class="i3">
+						<span class="i3 animated rotateInUpRight">
 							<a href="https://www.facebook.com/" target="about">
 								<i class="fab fa-facebook-f"></i>
 							</a>
 						</span>
-						<span class="i4">
+						<span class="i4 animated rotateInUpRight">
 							<a href="https://www.instagram.com/" target="about">
 								<i class="fab fa-instagram pr-0"></i>
 							</a>
@@ -566,8 +586,8 @@
 		<div class="container-fluid p-0 bg11">
 			<div class="container">
 				<p class="m-0 footer-p">
-					<a href="#"><img src="img/logo.png" class="img-width footer-logo"></a>
-					<a href="https://usoft.uz/" target="about"><span class="float-right text1 pr-1"> <img src="img/usoft.png" alt="usoft" class="img-width usoft"></span></a>
+					<a href="#"><img src="img/logo.png" class="img-width footer-logo animated rotateInUpLeft"></a>
+					<a href="https://usoft.uz/" target="about"><span class="float-right text1 pr-1"> <img src="img/usoft.png" alt="usoft" class="img-width usoft animated rotateInUpRight"></span></a>
 				</p>
 			</div>
 
@@ -599,10 +619,12 @@
 
 
 
+
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 <script src="js/common.js"></script>
+<script src="js/typed.min.js"></script>
 
 </body>
 </html>
