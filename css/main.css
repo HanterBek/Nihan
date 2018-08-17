@@ -926,14 +926,17 @@ figure.effect-steve p {
 
 
 .carousel-caption {
-	top: 40%;
+	top: 10%;
 	left: 0%;
 	width: 100%;
 	height: 100%;
 	text-align: left;
 }
 
-
+.carouselText {
+	color: #fff;
+	font-size: 20px;
+}
 
 
 
