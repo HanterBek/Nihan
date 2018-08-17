@@ -123,6 +123,9 @@
 	.section05 iframe{
 		height: 200px;
 	}
+	.carouselText {
+		font-size: 23px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -136,12 +139,20 @@
 	.d-grid {
 		grid-template-columns: auto auto;
 	}
-	
+	.carouselText {
+		font-size: 25px;
+	}
+	.carousel-caption {
+		top: 23%;
+	}
 }
 
 @media only screen and (min-width : 600px) {
 	.section05 iframe{
 		height: 300px;
+	}
+	.carouselText {
+		font-size: 28px;
 	}
 }
 
@@ -339,6 +350,12 @@
 	.p-4 {
 		padding: 1rem;
 	}
+	.carousel-caption {
+		top: 30%;
+	}
+	.carouselText {
+		font-size: 34px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -348,6 +365,12 @@
 	}
 	.box-shadow p {
 		font-size: 16px;
+	}
+	.carouselText {
+		font-size: 42px;
+	}
+	.carousel-caption {
+		top: 35%;
 	}
 	.p-4 {
 		padding: 1.5rem;
